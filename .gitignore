@@ -1,0 +1,9 @@
+# Ignore Python cache files
+*.pyc
+__pycache__/
+
+# Ignore temporary assets and logs
+assets/temp/*
+assets/login/c_google_login.png
+logs/log/*
+*.pyc
