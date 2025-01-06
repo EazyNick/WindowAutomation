@@ -3,15 +3,15 @@ from commands import *
 
 from git.git_manager import *
 
-class NikkeAutomation:
+class Automation:
     """
-    승리의 여신: 니케 자동화 프로그램
+    윈도우 자동화 프로그램
     """
     def __init__(self):
         """
         초기화 메서드
         """
-        log_manager.logger.info("Nikke Automation 프로그램 초기화")
+        log_manager.logger.info("Automation 프로그램 초기화")
         self.commands = {}  # 커맨드 등록용 딕셔너리
 
     def register_command(self, command_name, command):
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     #     log_manager.logger.error(f"레포지토리 동기화 실패: {e}")
 
     # NikkeAutomation 클래스 인스턴스 생성
-    automation = NikkeAutomation()
+    automation = Automation()
 
     # 커맨드 등록
     # automation.register_command("login", LoginCommand())

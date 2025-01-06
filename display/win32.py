@@ -4,7 +4,6 @@ import win32api
 import os
 import sys
 
-
 current_file = os.path.abspath(__file__) 
 project_root = os.path.abspath(os.path.join(current_file, "..", ".."))
 sys.path.append(project_root)
@@ -66,9 +65,9 @@ def list_windows():
 
 # 예제 실행
 if __name__ == "__main__":
-    list_windows()
-    screenhandler = ScreenHandler
-    game_title = "NIKKE"  # 게임 창의 제목을 정확히 입력
+    # list_windows()
+    screenhandler = ScreenHandler()
+    game_title = "win32.py - WindowAutomation - Visual Studio Code [Administrator]"  # 게임 창의 제목을 정확히 입력
     screenhandler.resize_game_window(game_title, 2200, 1300)  # 원하는 크기와 위치 설정
     # test_title = '로그인 - Google 계정 - Chrome'
     # screenhandler.focus_game_window(test_title)  # 원하는 크기와 위치 설정

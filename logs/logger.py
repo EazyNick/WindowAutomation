@@ -32,7 +32,7 @@ class LogManager:
             cls._instance = super(LogManager, cls).__new__(cls, *args, **kwargs)
         return cls._instance
     
-    def __init__(self, directory=r'C:\Users\User\Desktop\python\auto\python\NikkePCAuto\logs\log', max_files=10):
+    def __init__(self, directory=r'D:\Python\WindowAutomation\logs\log', max_files=10):
         """
         LogManager 초기화
 
@@ -57,7 +57,7 @@ class LogManager:
 
     def _init_logger(self):
         """ 로거 초기화 """
-        logger = logging.getLogger('Nikke')
+        logger = logging.getLogger('Automation')
 
         log_colors_config = {
             'DEBUG': 'cyan',
@@ -148,4 +148,6 @@ if __name__ == "__main__":
     log_manager.logger.info("This is an info message for testing purposes.")
     log_manager.logger.debug("This is a debug message for testing purposes.")
     log_manager.logger.error("This is an error message for testing purposes.")
+    log_manager.logger.hr("Section Start", level=2)
+
     print(f"Timestamp: {log_manager.get_timestamp()}")
